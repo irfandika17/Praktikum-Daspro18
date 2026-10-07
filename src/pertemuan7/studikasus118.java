@@ -7,7 +7,7 @@ public static void main(String[]args){
 
     Scanner Tezzar = new Scanner(System.in);
 
-    int hargapercup = 18000;
+    int hargapercup = 15000;
     int jumlahcup,uangbayar;
     int totalharga,diskon,totalbayar;
     int kembalian,kurang;
@@ -20,8 +20,8 @@ public static void main(String[]args){
     totalharga = jumlahcup*hargapercup;
     diskon = 0;
 
-    if (totalharga>=100000) {
-        diskon = totalharga*10/100;
+    if (totalharga>=110000) {
+        diskon = totalharga*5/100;
     }
         totalbayar = totalharga-diskon;
         System.out.println("total harga bayar = " +totalharga);
