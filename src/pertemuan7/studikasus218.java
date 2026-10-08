@@ -40,7 +40,32 @@ public static void main(String[] args) {
 
         } else {
             System.out.println(" bukan juara, tidak memperoleh dana penghargaan");
-        }
+        }}else if (jeniskegiatan.equalsIgnoreCase("PKM")) {
+            System.out.println("jumlah dokumen : ");
+            jumlahdokumen = Tezzar.nextInt();
+
+            System.out.println("status pendanaan PKM : ");
+            statuspkm = Tezzar.nextInt();
+
+            if (statuspkm ==1) {
+                System.out.println("lolos pendanaan, dana penghargaan diberikan");
+
+                if (jumlahdokumen == 4) {
+                    System.out.println("PKM Lolos, berhak memperoleh dana penghargaan");
+
+                } else {
+                    System.out.println("dokumen belum lengkap, dana penghargaan tidak diberikan");
+
+                }
+
+             
+            } else {
+                System.out.println("tidak lolos, tidak memperoleh dana penghargaan");
+
+            }
+    } else {
+        System.out.println("jenis kegiatan diluar ketentuan, tidak memperoleh dana penghargaan");
+    }
          
         
 
