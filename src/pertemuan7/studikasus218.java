@@ -1,0 +1,51 @@
+package pertemuan7;
+
+import java.util.Scanner;
+
+public class studikasus218 {
+public static void main(String[] args) {
+    
+    Scanner Tezzar = new Scanner(System.in);
+   
+    int jumlahdokumen;
+    int peringkatjuara;
+    int statuspkm;
+    String namamahasiswa;
+    String jeniskegiatan;
+
+    System.out.println(" Nama Mahasiswa : ");
+    namamahasiswa = Tezzar.nextLine();
+    System.out.println("jenis kegiatan (BELMAWA,BAKORMA,MANDIRI,LAINNYA : ");
+    jeniskegiatan = Tezzar.nextLine();
+{
+    if (jeniskegiatan.equalsIgnoreCase("BELMAWA") ||
+        jeniskegiatan.equalsIgnoreCase("BAKORMA") ||
+        jeniskegiatan.equalsIgnoreCase("MANDIRI") ){   
+
+        
+        System.out.println("peringkat juara 1/2/3, 0 bukan juara");
+        peringkatjuara = Tezzar.nextInt();
+
+        if (peringkatjuara == 1 || peringkatjuara == 2 || peringkatjuara == 3 ) {
+            System.out.println("Masukkan jumlah dokumen : ");
+            jumlahdokumen = Tezzar.nextInt();
+          
+
+        if (jumlahdokumen == 4) {
+            System.out.println(" memenuhi ketentuan, Dana penghargaan diberikan "); 
+
+        } else {
+            System.out.println(" Dokumen belum lengkap, Dana penghargaan tidak diberikan");
+        }
+
+        } else {
+            System.out.println(" bukan juara, tidak memperoleh dana penghargaan");
+        }
+         
+        
+
+    Tezzar.close();
+
+}
+}
+}
