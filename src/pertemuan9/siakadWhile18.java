@@ -24,6 +24,7 @@ while (i < jumlah) {
     
     if (nilai > 80 && nilai <= 100) {
        System.out.println("nilai mahasiswa ke-" + (i + 1) + " adalah A");
+       System.out.println("bagus,pertahankan nilainya!");
     } else if (nilai > 73 && nilai <= 80) {
         System.out.println("nilai mahasiswa ke-" + (i + 1) + " adalah B+");
     } else if (nilai > 65 && nilai <= 73) {
