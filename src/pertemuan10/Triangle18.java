@@ -24,15 +24,22 @@ public static void main(String[] args) {
         }
         System.out.println();
         i++;
-
-
     }
-    Tezzar.close();
 
+        i = n;
+        while (i >= 1) {
+            int j = 0;
+            while (j < i) {
+                System.out.print("*");
+              j++;   
+            }
+            System.out.println();
+            i--;
 
+        }
+        System.out.println();
+
+        Tezzar.close();
+    }
 }
 
-
-
-
-}
