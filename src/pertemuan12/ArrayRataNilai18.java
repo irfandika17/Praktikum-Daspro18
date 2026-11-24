@@ -12,7 +12,10 @@ public class ArrayRataNilai18 {
 
         Scanner Tezzar = new Scanner(System.in);
         
-        int [] nilaiMhs = new int[10];
+        System.out.print("masukkan jumlah mahasiswa : " );
+        int jumlahMhs = Tezzar.nextInt();
+
+        int [] nilaiMhs = new int[jumlahMhs];
         int total = 0;
         double rata;
 
