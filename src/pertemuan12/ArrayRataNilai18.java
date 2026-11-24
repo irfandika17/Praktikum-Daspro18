@@ -28,6 +28,7 @@ public class ArrayRataNilai18 {
 
         int tertinggi = nilaiMhs[0];
         int terendah = nilaiMhs[0];
+        int jumlahLulus = 0;
 
         for (int i = 0; i < nilaiMhs.length; i++) {
             if (nilaiMhs[i] > tertinggi) tertinggi = nilaiMhs[i]; {  
@@ -35,8 +36,14 @@ public class ArrayRataNilai18 {
              if (nilaiMhs[i] < terendah) terendah = nilaiMhs[i]; {
                     
             }  
-        
             
+            if (nilaiMhs[i] > 70) {
+                jumlahLulus++;
+                
+            }
+
+
+
         }
         
         String predikat;
@@ -51,7 +58,7 @@ public class ArrayRataNilai18 {
         System.out.println("nilai tertinggi: " + tertinggi);
         System.out.println("nilai terendah: " + terendah);
         System.out.println("predikat kelas : " + predikat);
-
+        System.out.println("jumlah mahasiswa lulus: " + jumlahLulus);
 
     }
     
