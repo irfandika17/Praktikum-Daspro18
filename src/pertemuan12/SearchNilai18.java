@@ -39,9 +39,12 @@ public class SearchNilai18 {
         }
 
         if (!ditemukan) 
-            System.out.println("nilai " + key + " tidak ditemukan");{
+            System.out.println("nilai " + key + " yang dicari tidak ditemukan dalam array " + Arrays.toString(nilai));
+            System.out.println("periksa nilai kembali ");{
             
         }
+
+        Tezzar.close();
         
         
     }
