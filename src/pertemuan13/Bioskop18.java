@@ -25,12 +25,11 @@ public class Bioskop18 {
 
         } 
 
-         System.out.println("Penonton pada baris ke-3: "); 
-        for (int i = 0; i < penonton[2].length; i++) { 
-        System.out.println(penonton[2][i]);
-       
+        System.out.println("Penonton pada baris ke-3: "); 
+        for (String i : penonton[2]) { 
+        System.out.println(i); 
         } 
-        
+
     }
 }
     
